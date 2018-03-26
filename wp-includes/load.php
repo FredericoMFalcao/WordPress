@@ -606,9 +606,9 @@ function wp_not_installed() {
 	} elseif ( ! is_blog_installed() && ! wp_installing() ) {
 		nocache_headers();
 
-		require( ABSPATH . WPINC . '/kses.php' );
-		require( ABSPATH . WPINC . '/pluggable.php' );
-		require( ABSPATH . WPINC . '/formatting.php' );
+		require_once( ABSPATH . WPINC . '/kses.php' );
+		require_once( ABSPATH . WPINC . '/pluggable.php' );
+		require_once( ABSPATH . WPINC . '/formatting.php' );
 
 		$link = wp_guess_url() . '/wp-admin/install.php';
 

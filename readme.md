@@ -13,7 +13,7 @@ git clone --depth=1 https://github.com/FredericoMFalcao/WordPress
 
 Launch PHP development webserver:
 ```
-php -S loccalhost:8080
+php -S localhost:8080
 ```
 
 And voilá!
